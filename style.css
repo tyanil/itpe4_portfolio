@@ -542,7 +542,6 @@ footer a:hover {
   position: relative;
   white-space: nowrap;
   margin-bottom: 20px;
-  /* Optional: adds a soft fade mask on the left/right edges for a professional screen look */
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
@@ -570,27 +569,24 @@ footer a:hover {
     transform: translateX(-50%);
   }
 }
-/* About Me Teleprompter Container */
 .about-teleprompter-container {
   overflow: hidden;
   width: 100%;
   max-width: 550px;
-  max-height: 280px; /* Limits the visible height like a reading window */
+  max-height: 280px; 
   position: relative;
   mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
   -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
 }
 
-/* Vertical Teleprompter Track */
 .about-teleprompter-track {
   display: flex;
   flex-direction: column;
   animation: aboutVerticalScroll 35s linear infinite;
 }
 
-/* Individual text blocks */
 .about-block {
-  padding-bottom: 40px; /* Space between the repeating loops */
+  padding-bottom: 40px; 
 }
 
 .about-block p {
@@ -600,12 +596,10 @@ footer a:hover {
   margin-bottom: 14px;
 }
 
-/* Pause scrolling when you hover over the text so it's easy to read */
 .about-teleprompter-container:hover .about-teleprompter-track {
   animation-play-state: paused;
 }
 
-/* Vertical scrolling keyframes */
 @keyframes aboutVerticalScroll {
   0% {
     transform: translateY(0);
